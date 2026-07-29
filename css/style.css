@@ -71,7 +71,7 @@ box-shadow:0 5px 20px rgba(0,0,0,.3);
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:15px 10%;
+padding:10px 10% ;
 }
 
 .logo{
@@ -88,18 +88,10 @@ border:3px solid #38bdf8;
 object-fit:cover;
 }
 
-.logo h2{
-font-size:1.3rem;
-font-weight:700;
-}
-
-.logo span{
-color:#38bdf8;
-}
 
 .navbar ul{
 display:flex;
-gap:30px;
+gap:25px;
 }
 
 .navbar ul li a{
