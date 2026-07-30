@@ -1,13 +1,7 @@
-/* ==========================================
-   Biruk Zelalem Portfolio
-   main.js
-========================================== */
+
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    /* ===============================
-       Smooth Scroll
-    =============================== */
 
     document.querySelectorAll('a[href^="#"]').forEach(link => {
 
@@ -31,9 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     });
 
-    /* ===============================
-       Active Navbar Link
-    =============================== */
+
 
     const sections = document.querySelectorAll("section");
 
@@ -76,9 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     activeNav();
 
-    /* ===============================
-       Back To Top Button
-    =============================== */
+
 
     const topBtn = document.getElementById("topBtn");
 
@@ -114,9 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     }
 
-    /* ===============================
-       Scroll Reveal Animation
-    =============================== */
+
 
     const revealElements = document.querySelectorAll(
 
@@ -150,9 +138,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     revealElements.forEach(el => observer.observe(el));
 
-});/* ==========================================
-   Typing Animation
-========================================== */
+});
+
 
 const typingElement = document.querySelector(".hero-text h2");
 
@@ -216,9 +203,7 @@ if (typingElement) {
 
 }
 
-/* ==========================================
-   Animated Statistics
-========================================== */
+
 
 const counters = document.querySelectorAll(".stats .card h2");
 
@@ -270,9 +255,7 @@ counters.forEach(counter => {
 
 });
 
-/* ==========================================
-   Navbar Scroll Effect
-========================================== */
+
 
 const header = document.querySelector("header");
 
@@ -294,9 +277,6 @@ window.addEventListener("scroll", () => {
 
 });
 
-/* ==========================================
-   Ripple Button Effect
-========================================== */
 
 document.querySelectorAll(".btn").forEach(button => {
 
@@ -324,9 +304,8 @@ document.querySelectorAll(".btn").forEach(button => {
 
     });
 
-});/* ==========================================
-   Hero Image Parallax
-========================================== */
+});
+
 
 const heroImage = document.querySelector(".hero-image img");
 
@@ -344,9 +323,6 @@ if (heroImage) {
 
 }
 
-/* ==========================================
-   Card Hover Animation
-========================================== */
 
 document.querySelectorAll(".card").forEach(card => {
 
@@ -364,9 +340,6 @@ document.querySelectorAll(".card").forEach(card => {
 
 });
 
-/* ==========================================
-   Image Tilt Effect
-========================================== */
 
 document.querySelectorAll("img").forEach(img => {
 
@@ -398,9 +371,7 @@ document.querySelectorAll("img").forEach(img => {
 
 });
 
-/* ==========================================
-   Double Click Navbar
-========================================== */
+
 
 const navbar = document.querySelector(".navbar");
 
@@ -424,9 +395,6 @@ if (navbar) {
 
 }
 
-/* ==========================================
-   Loading Animation
-========================================== */
 
 window.addEventListener("load", () => {
 
@@ -442,15 +410,11 @@ window.addEventListener("load", () => {
 
 });
 
-/* ==========================================
-   Welcome Message
-========================================== */
+
 
 console.log("Welcome to Biruk Zelalem Portfolio");
 
-/* ==========================================
-   Current Year
-========================================== */
+
 
 const year = document.getElementById("year");
 
@@ -459,3 +423,24 @@ if (year) {
     year.textContent = new Date().getFullYear();
 
 }
+
+
+const hamburger = document.querySelector(".hamburger");
+const menu = document.querySelector(".navbar ul");
+
+hamburger.addEventListener("click",()=>{
+
+    menu.classList.toggle("active");
+
+});
+
+
+
+
+const navbar = document.querySelector(".navbar");
+
+navbar.addEventListener("dblclick",()=>{
+
+    navbar.style.display="none";
+
+});
